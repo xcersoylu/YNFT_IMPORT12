@@ -6,6 +6,6 @@
                mc_content_type   TYPE string VALUE 'text/json',
                mc_gross          TYPE ynft_e_gross_net VALUE 'G',
                mc_net            TYPE ynft_e_gross_net VALUE 'N'.
-    METHODS calculate_tax IMPORTING is_line             TYPE znft_s_import_tax_line
-                                    iv_calculation_type TYPE znft_e_gross_net
-                          RETURNING VALUE(rv_tax)       TYPE znft_e_bwert.
+    METHODS calculate_tax IMPORTING is_line             TYPE ynft_s_imp_tax_line
+                                    iv_calculation_type TYPE ynft_e_gross_net
+                          RETURNING VALUE(rv_tax)       TYPE ynft_e_bwert.
